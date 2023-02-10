@@ -14,9 +14,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="/images/logo.png" />
   </head>
-  <body class="h-[500vh]">
+  <body class="">
+    <!-- Nav-Bar -->
+
     <nav
-      class="sticky top-0 flex bg-[#2c2c32] items-center h-[50px] text-white"
+      class="sticky drop-shadow-lg top-0 flex bg-[#2c2c32] items-center h-[50px] text-white"
     >
       <div class="flex">
         <img
@@ -24,47 +26,170 @@
           src="/images/logo.png"
           alt="logo"
         />
-        <p class="mr-11 ml-3 font-[400] text-xl">Visual Studio Code</p>
+        <p class="mr-7 cursor-pointer ml-3 font-[400] text-xl">
+          Visual Studio Code
+        </p>
       </div>
       <div>
-        <ul class="flex gap-5">
-          <li class="font-mono text-lg text-[#808080] hover:text-white w-500">
+        <ul class="cursor-pointer flex gap-5 mt-1">
+          <li
+            class="font-sans text-[16px] text-[#ababad] hover:text-white w-500"
+          >
             Docs
           </li>
-          <li class="font-mono text-lg text-[#808080] hover:text-white w-500">
+          <li
+            class="font-sans text-[16px] text-[#ababad] hover:text-white w-500"
+          >
             Update
           </li>
-          <li class="font-mono text-lg text-[#808080] hover:text-white w-500">
+          <li
+            class="font-sans text-[16px] text-[#ababad] hover:text-white w-500"
+          >
             Blog
           </li>
-          <li class="font-mono text-lg text-[#808080] hover:text-white w-500">
+          <li
+            class="font-sans text-[16px] text-[#ababad] hover:text-white w-500"
+          >
             API
           </li>
-          <li class="font-mono text-lg text-[#808080] hover:text-white w-500">
+          <li
+            class="font-sans text-[16px] text-[#ababad] hover:text-white w-500"
+          >
             Extension
           </li>
-          <li class="font-mono text-lg text-[#808080] hover:text-white w-500">
+          <li
+            class="font-sans text-[16px] text-[#ababad] hover:text-white w-500"
+          >
             FAQ
           </li>
-          <li class="font-mono text-lg text-[#808080] hover:text-white w-500">
+          <li
+            class="font-sans text-[16px] text-[#ababad] hover:text-white w-500"
+          >
             Learn
           </li>
         </ul>
       </div>
 
-      <div>
-        <img class="w-4 top-0 left-9 relative" src="/images/search.svg" alt="" />
-        </div>
-        <div class="rounded-xl px-5 py-3 bg-gray-500 ">
-        <input class="bg-transparent" 
-          type="text" class="ml-10"
-          placeholder="          Search Docs"
+      <div class="ml-16">
+        <img
+          class="w-[1rem] ml-14 bg-gray-700 py-[15.3px] relative left-12"
+          src="/images/search.svg"
+          alt=""
         />
       </div>
+      <div class="px-1 py-[13px] bg-gray-700">
+        <input
+          class="ml-12 bg-transparent focus:outline-none border-none"
+          type="text"
+          placeholder="  Search Docs"
+        />
+      </div>
+      <div>
+        <img
+          class="w-4 cursor-pointer z-10 bg-transparent py-[17px] absolute right-[11.3rem] top-0"
+          src="/images/download.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <button
+          class="cursor-pointer absolute hover:bg-[#005ba4] top-0 right-[4rem] font-medium px-9 py-[13px] bg-[#0066b8]"
+        >
+          Download
+        </button>
+      </div>
     </nav>
+
+    <!-- Message -->
     <marquee
-      class="sticky top-14 text-xl drop-shadow-md items-center text-white bg-blue-600 font-small h-7"
+      class="sticky top-[54px] text-xl bg-[#25252b] drop-shadow-[0_1px_1.5px_#808080] items-center text-white font-small h-7"
       >For Education Purpose.</marquee
     >
+
+    <!-- Hero-Section -->
+
+    <!-- justify-center content-center justify-items-center   -->
+
+    <main
+      class="text-white bg-[#2c2c32] flex space-x-10 md:flex-row flex-col justify-center items-center h-[90vh]"
+    >
+      <div class="text-center font-sans ml-10">
+        <h1 class="leading-[3.4rem] font-light text-[3rem]">
+          Code editing. <span class="font-normal"> Redefined. </span>
+        </h1>
+        <p class="text-[#ababad] text-[1.4rem] font-normal my-[1.4rem]">
+          Free. Built on open source. Runs everywhere.
+        </p>
+        <div class="flex items-center justify-center">
+          <div>
+            <button
+              class="bg-[#0066b8] font-semibold text-[1.2rem] hover:bg-[#005ba4] px-5 py-2"
+            >
+              Download for Windows
+              <p class="font-normal text-[1rem] text-gray-200">Stable Build</p>
+            </button>
+          </div>
+          <div>
+            <img
+              class="w-10 h-[4.3em] m-1 bg-[#0066b8] hover:bg-[#005ba4] p-[0.6rem]"
+              src="/images/chevronDown.svg"
+              alt="down"
+            />
+          </div>
+        </div>
+        <div
+          class="w-[32.5vw] ml-10 flex align-center items-center justify-center"
+        >
+          <p
+            class="bg-[#25252b] text-[#1887ff] hover:underline-offset-1 hover:underline h-8 px-3 rounded-[50px] my-4"
+          >
+            Web<span class="text-white underline-none">,</span> Insiders
+            edition<span class="text-white">, </span
+            ><span
+              class="text-white hover:no-underline hover:underline-offset-0"
+              >or</span
+            >
+            other platforms
+          </p>
+        </div>
+        <p class="text-[#ababad]">By using VS Code, you agree to its</p>
+        <p class="text-[#1887ff] m-[-2px]">license and privacy statement.</p>
+      </div>
+      <div>
+        <img
+          class="] mr-16 w-[50vw]"
+          src="/images/home-screenshot-win-lg.png"
+          alt=""
+        />
+      </div>
+    </main>
+
+    <!-- Section-1 -->
+
+    <section class="flex justify-evenly items-center  text-2xl  h-[24vh]">
+      <div class="">
+        <img class="w-[4rem] h-[4rem] ml-7 " src="/images/Intlli.png" alt="" />
+        <p> IntelliSence</p>
+      </div>
+      <div>
+        <img class="w-[4rem] h-[4rem] ml-12" src="/images/bug.png" alt="" />
+        <p>Run and debug</p>
+      </div>
+      <div>
+        <img class="w-[4rem] h-[4rem] ml-6" src="images/git.png" alt="" />
+        <p>Build-in Git</p>
+      </div>
+      <div>
+        <img class="w-[4rem] h-[4rem] ml-5" src="/images/plugin.png" alt="" />
+        <p>Extension</p>
+      </div>
+    </section>
+
+    <!-- Section-2 -->
+
+    <section class="bg-[#f5f5f5] h-50 ">
+      <img src="images/download_blue.svg" alt="">
+
+    </section>
   </body>
 </html>

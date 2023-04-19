@@ -5,6 +5,11 @@
       body {
         font-family: "Segoe UI", "Helvetica Neue", "Helvetica", Arial,
           sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        body {
+        }
       }
     </style>
     <meta charset="UTF-8" />
@@ -14,7 +19,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="/images/logo.png" />
   </head>
-  <body class="">
+  <body class="m-0 p-0">
     <!-- Nav-Bar -->
 
     <nav
@@ -103,12 +108,10 @@
     <!-- Message -->
     <marquee
       class="sticky top-[54px] text-xl bg-[#25252b] drop-shadow-[0_1px_1.5px_#808080] items-center text-white font-small h-7"
-      >For Education Purpose.</marquee
+      >For Educational Purpose.</marquee
     >
 
     <!-- Hero-Section -->
-
-    <!-- justify-center content-center justify-items-center   -->
 
     <main
       class="text-white bg-[#2c2c32] flex space-x-10 md:flex-row flex-col justify-center items-center h-[90vh]"
@@ -166,10 +169,10 @@
 
     <!-- Section-1 -->
 
-    <section class="flex justify-evenly items-center  text-2xl  h-[24vh]">
+    <section class="flex justify-evenly items-center text-2xl h-[24vh]">
       <div class="">
-        <img class="w-[4rem] h-[4rem] ml-7 " src="/images/Intlli.png" alt="" />
-        <p> IntelliSence</p>
+        <img class="w-[4rem] h-[4rem] ml-7" src="/images/Intlli.png" alt="" />
+        <p>IntelliSence</p>
       </div>
       <div>
         <img class="w-[4rem] h-[4rem] ml-12" src="/images/bug.png" alt="" />
@@ -187,9 +190,311 @@
 
     <!-- Section-2 -->
 
-    <section class="bg-[#f5f5f5] h-50 ">
-      <img src="images/download_blue.svg" alt="">
-
+    <section
+      class="bg-[#f5f5f5] h-[80vh] justify-center gap-80 items-start flex"
+    >
+      <div class="w-12 mt-[15vh] ml-[-18rem]">
+        <blockquote class="h-8 twitter-tweet">
+          <p lang="en" dir="ltr">
+            Just as I thought
+            <a href="https://twitter.com/code?ref_src=twsrc%5Etfw">@code</a>
+            couldn&#39;t get better, out comes its Remote Development plugins in
+            the Stable version that lets you remote into containers as a dev
+            environment! 😍
+            <a
+              href="https://twitter.com/hashtag/DevTools?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#DevTools</a
+            >
+          </p>
+          &mdash; Darren (@MrDarrenV)
+          <a
+            href="https://twitter.com/MrDarrenV/status/1144005978901372928?ref_src=twsrc%5Etfw"
+            >June 26, 2019</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+      <div class="mt-16 w-12 ml-[-56vh] order-3">
+        <blockquote class="twitter-tweet" data-dnt="true">
+          <p lang="en" dir="ltr">
+            I switched from Android Studio to VSCode (<a
+              href="https://twitter.com/code?ref_src=twsrc%5Etfw"
+              >@code</a
+            >) for
+            <a
+              href="https://twitter.com/hashtag/Flutter?src=hash&amp;ref_src=twsrc%5Etfw"
+              >#Flutter</a
+            >
+            development and will never go back!
+          </p>
+          &mdash; Dave Faliskie (@davefaliskie)
+          <a
+            href="https://twitter.com/davefaliskie/status/1624040488142766080?ref_src=twsrc%5Etfw"
+            >February 10, 2023</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+      <div class="mt-20 w-12">
+        <blockquote class="twitter-tweet">
+          <p lang="en" dir="ltr">
+            I am learning so much as a Tech Lead in JumboCode, but I wish I knew
+            all of this prior to taking on a role with 12 devs who depend on my
+            decision making abilities. Good tech-stack decisions earlier could
+            have improved efficiency. Live &amp; learn!! HappyCoding via
+            <a href="https://twitter.com/code?ref_src=twsrc%5Etfw">@code</a>
+          </p>
+          &mdash; Ellis Brown (@ellisbrown_code)
+          <a
+            href="https://twitter.com/ellisbrown_code/status/1623172652104839169?ref_src=twsrc%5Etfw"
+            >February 8, 2023</a
+          >
+        </blockquote>
+        <script
+          async
+          src="https://platform.twitter.com/widgets.js"
+          charset="utf-8"
+        ></script>
+      </div>
+      <img
+        class="relative w-10 top-[28vh] right-[-28vw] hover:border-2"
+        src="/images/right.png"
+        alt=""
+      />
     </section>
+
+    <!-- Section-3 -->
+    <section
+      class="h-[22rem] text-[17px] flex justify-between items-center gap-20 px-20 py-40"
+    >
+      <div>
+        <img class="w-[80vw]" src="./images/home-intellisense.svg" alt="" />
+      </div>
+      <div>
+        <h1 class="mb-[28px] text-[2em] text-[#444444] font-light">
+          Meet IntelliSense.
+        </h1>
+        <p class="text-[1.3em] text-[#444444] leading-loose">
+          Go beyond syntax highlighting and autocomplete with IntelliSense,
+          which provides smart completions based on variable types, function
+          definitions, and imported modules.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section-4 -->
+    <section
+      class="h-[22rem] body text-[17px] px-20 py-40 bg-[#f5f5f5] flex items-center gap-20 flex-row-reverse"
+    >
+      <div>
+        <img class="w-[70vw] ml-" src="./images/home-debug.svg" alt="" />
+      </div>
+      <div>
+        <h1 class="mb-[28px] text-[2em] text-[#444444] font-light">
+          Print statement debugging is a thing of the past.
+        </h1>
+        <p class="text-[1.3em] text-[#444444] leading-loose">
+          Debug code right from the editor. Launch or attach to your running
+          apps and debug with break points, call stacks, and an interactive
+          console.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section-5 -->
+    <section
+      class="h-[22rem] text-[17px] flex justify-between items-center gap-20 px-20 py-40"
+    >
+      <div><img class="w-[85vw]" src="./images/home-git.svg" alt="" /></div>
+      <div>
+        <h1 class="mb-[28px] text-[2em] text-[#444444] font-light">
+          Git commands built-in.
+        </h1>
+        <p class="text-[1.3em] text-[#444444] leading-loose">
+          Working with Git and other SCM providers has never been easier. Review
+          diffs, stage files, and make commits right from the editor. Push and
+          pull from any hosted SCM service.
+        </p>
+      </div>
+    </section>
+
+    <!-- Section-6 -->
+    <section
+      class="h-[22rem] body text-[17px] px-20 py-40 bg-[#f5f5f5] flex items-center gap-20 flex-row-reverse"
+    >
+      <div>
+        <img
+          class="w-[80vw] ml-"
+          src="./images/Hundreds-of-Extensions.png"
+          alt=""
+        />
+      </div>
+      <div>
+        <h1 class="mb-[28px] text-[2em] text-[#444444] font-light">
+          Extensible and customizable.
+        </h1>
+        <p class="text-[1.3em] text-[#444444] leading-loose">
+          Want even more features? Install extensions to add new languages,
+          themes, debuggers, and to connect to additional services. Extensions
+          run in separate processes, ensuring they won't slow down your editor.
+          <a class="hover:underline text-blue-500" href="#">
+            more about extensions.
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Section-7 -->
+    <section
+      class="h-[22rem] text-[17px] flex justify-between items-center gap-20 px-20 py-40"
+    >
+      <div><img class="w-[85vw]" src="./images/home-azure.svg" alt="" /></div>
+      <div>
+        <h1 class="mb-[28px] text-[2em] text-[#444444] font-light">
+          Deploy with confidence and ease
+        </h1>
+        <p class="text-[1.3em] text-[#444444] leading-loose">
+          With
+          <a class="hover:underline text-blue-500" href="#">Microsoft Azure</a>
+          you can deploy and host your React, Angular, Vue, Node, Python (and
+          more!) sites, store and query relational and document based data, and
+          scale with serverless computing, all with ease,
+          <a class="hover:underline text-blue-500" href="#"
+            >all from within VS Code.</a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- Get Started now -->
+
+    <section class="bg-[#f5f5f5]">
+      <h1
+        class="flex justify-center pt-[2em] text-[2.4em] text-[#444444] font-light"
+      >
+        VS Code for
+      </h1>
+
+      <div
+        class="grid grid-cols-6 gap-5 place-content-center place-items-start px-20 pl-[8em] pb-20 pt-10"
+      >
+        <div class="flex items-center">
+          <img class="w-10" src="./images/javascript.svg" alt="" />
+          <p class="text-lg">JavaScript</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/python.svg" alt="" />
+          <p class="text-lg">Python</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/java.svg" alt="" />
+          <p class="text-lg">Java</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/markdown.svg" alt="" />
+          <p class="text-lg">Markdown</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/typescript.svg" alt="" />
+          <p class="text-lg">TypeScript</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/cpp.svg" alt="" />
+          <p class="text-lg">C/C++</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/json.svg" alt="" />
+          <p class="text-lg">JSON</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/powershell.svg" alt="" />
+          <p class="text-lg">Powershell</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/html.svg" alt="" />
+          <p class="text-lg">HTML/CSS</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/csharp.svg" alt="" />
+          <p class="text-lg">C#</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/php.svg" alt="" />
+          <p class="text-lg">PHP</p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-10" src="./images/yaml.svg" alt="" />
+          <p class="text-lg">YAML</p>
+        </div>
+        <div class="place-self-center col-span-6">
+          <a class="hover:underline text-blue-500 text-lg" href="#"
+            >and many more languages on the Marketplace...</a
+          >
+        </div>
+      </div>
+
+      <div class="flex justify-center pb-[5em]">
+        <button
+          class="bg-[#0066b8] rounded-sm text-white font-semibold text-[1.5rem] hover:bg-[#005ba4] px-7 py-4"
+        >
+          Get Started Now
+        </button>
+      </div>
+    </section>
+
+
+
+    <!-- Downloads for - Windows, Linux , Mac -->
+
+<section>
+<div>
+<div>
+<img class="w-28 h-28" src="./images/windows-logo.png" alt="">
+</div>
+<div class="bg-[#0066b8] flex flex-col justify-center items-center rounded-sm text-white w-[18em] h-[5.4em] hover:bg-[#005ba4] ">
+<div class="flex  gap-x-[2em]" ><img class="w-7 inline" src="./images/download.svg"  alt=""> <h1 class="leading-[2em] text-bold inline text-2xl" >Windows</h1></div>
+<div><p class="text-sm font-semibold">Windows 8, 10, 11</p></div>
+</div>
+<table>
+<tr>
+<td>User Installer</td>
+<td>x64</td>
+<td>x86</td>
+<td>Arm64</td>
+</tr>
+<tr>
+  <td>System Installer</td>
+  <td>x64</td>
+  <td>x86</td>
+  <td>Arm64</td>
+</tr>
+<tr>
+  <td>.zip</td>
+  <td>x64</td>
+  <td>x86</td>
+  <td>Arm64</td>
+</tr>
+<tr>
+  <td>CLI</td>
+  <td>x64</td>
+  <td>x86</td>
+  <td>Arm64</td>
+</tr>
+</table>
+</div>
+<div>
+<img class="w-[10%]" src="./images/linux-logo.png" alt="">
+</div>
+</section>
+
+
   </body>
 </html>

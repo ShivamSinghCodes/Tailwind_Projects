@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  ng-app="TestApp">
   <head>
     <style>
       body {
@@ -8,9 +8,11 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
-        body {
-        }
+        
       }
+      /* .spaninng{
+        colspan=2
+      } */
     </style>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,7 +21,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="icon" type="image/x-icon" href="/images/logo.png" />
   </head>
-  <body class="m-0 p-0">
+  <body  ng-controller="testCtrl" class="m-0 p-0">
     <!-- Nav-Bar -->
 
     <nav
@@ -450,51 +452,140 @@
       </div>
     </section>
 
-
-
     <!-- Downloads for - Windows, Linux , Mac -->
 
-<section>
-<div>
-<div>
-<img class="w-28 h-28" src="./images/windows-logo.png" alt="">
-</div>
-<div class="bg-[#0066b8] flex flex-col justify-center items-center rounded-sm text-white w-[18em] h-[5.4em] hover:bg-[#005ba4] ">
-<div class="flex  gap-x-[2em]" ><img class="w-7 inline" src="./images/download.svg"  alt=""> <h1 class="leading-[2em] text-bold inline text-2xl" >Windows</h1></div>
-<div><p class="text-sm font-semibold">Windows 8, 10, 11</p></div>
-</div>
-<table>
-<tr>
-<td>User Installer</td>
-<td>x64</td>
-<td>x86</td>
-<td>Arm64</td>
-</tr>
-<tr>
-  <td>System Installer</td>
-  <td>x64</td>
-  <td>x86</td>
-  <td>Arm64</td>
-</tr>
-<tr>
-  <td>.zip</td>
-  <td>x64</td>
-  <td>x86</td>
-  <td>Arm64</td>
-</tr>
-<tr>
-  <td>CLI</td>
-  <td>x64</td>
-  <td>x86</td>
-  <td>Arm64</td>
-</tr>
-</table>
-</div>
-<div>
-<img class="w-[10%]" src="./images/linux-logo.png" alt="">
-</div>
-</section>
+    <section class="w-[100%] h-[80vh] flex flex-row gap-10  justify-center">
+      <!-- Windows Download -->
+      <div class="flex flex-col  mt-20 items-center">
+        <div class="mb-4" >
+          <img class="w-28 h-28" src="./images/windows-logo.png" alt="" />
+        </div>
+        <div
+          class="bg-[#0066b8] flex flex-col justify-center items-center rounded-sm text-white w-[240px] hover:cursor-pointer h-[68px] hover:bg-[#005ba4]"
+        >
+          <div class="flex gap-x-[1em]">
+            <img class="w-5 inline" src="./images/download.svg" alt="" />
+            <h1 class="leading-[2em] text-bold inline text-xl">Windows</h1>
+          </div>
+          <div><p class="text-sm font-semibold">Windows 8, 10, 11</p></div>
+        </div>
+        <table class="border-spacing-1 border-separate mt-4">
+          <tr >
+            <td class="text-center  ">User Installer</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4]  rounded-sm px-1">x64</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4]  rounded-sm px-1">x86</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4]  rounded-sm px-1">Arm64</td>
+          </tr>
+          <tr>
+            <td class="text-center">System Installer</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">x64</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">x86</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Arm64</td>
+          </tr>
+          <tr>
+            <td class="text-center">.zip</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4]  rounded-sm px-1">x64</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">x86</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Arm64</td>
+          </tr>
+          <tr>
+            <td class="text-center ">CLI</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">x64</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">x86</td>
+            <td class="bg-[#0066b8] hover:cursor-pointer  text-white hover:bg-[#005ab4] rounded-sm px-1">Arm64</td>
+          </tr>
+        </table>
+      </div>
 
+      <!-- Linux Download -->
+      <div class="flex flex-col mt-20 items-center">
+        <div class="flex flex-col items-center mb-4">
+          <img class="w-[46.5%] mr-0" src="./images/linux-logo.png" alt="" />
+        </div>
+        <div class="flex flex-row gap-[0.2em] inline text-white">
+          <div
+            class="w-[147px] flex flex-col items-center justify-center hover:bg-[#005ba4] hover:cursor-pointer items-center rounded-sm bg-[#0066b8] h-[68px]"
+          >
+            <div class="flex gap-x-[1em]">
+              <img class="w-5 inline" src="./images/download.svg" alt="" />
+              <h1 class="leading-[2em] text-bold inline text-xl">.deb</h1>
+            </div>
+            <div><p class="text-sm font-semibold">Debian, Ubuntu</p></div>
+          </div>
+          <br />
+          <div
+            class="h-[68px] w-[147px] flex flex-col items-center justify-center rounded-sm hover:cursor-pointer bg-[#0066b8] hover:bg-[#005ba4] inline"
+          >
+            <div class="flex gap-x-[1em]">
+              <img class="w-5 inline" src="./images/download.svg" alt="" />
+              <h1 class="leading-[2em] text-bold inline text-xl">.rpm</h1>
+            </div>
+            <div>
+              <p class="text-sm font-semibold">Red Hat, Fedora, SUSE</p>
+            </div>
+          </div>
+        </div>
+        <table  class="border-spacing-1 border-separate mt-4">
+          <tr>
+            <td class="text-center">.deb</td>
+            <td class="text-center"><span class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1"> x64 </span></td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Arm32</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Arm64</td>
+          </tr>
+          <tr>
+            <td class="text-center">.rpm</td>
+            <td class="text-center"><span class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1"> x64 </span></td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Arm32</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Arm64</td>
+          </tr>
+          <tr class="border-spacing-0">
+            <td class="text-center">.tar.gz</td>
+            <td class="text-center"><span class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1"> x64 </span></td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Arm32</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Arm64</td>
+          </tr>
+          <tr >
+            <td class="text-center">Snap</td>
+            <td colspan="2"><span class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Snap Store </span></td>
+          </tr>
+          <tr >
+            <td class="text-center">CLI</td>
+            <td class="text-center"><span class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1"> x64 </span></td>
+            <td ><span class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1"> Arm32 </span></td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Arm64</td>
+          </tr>
+        </table>
+      </div>
 
+      <!-- MAC Download -->
+      <div class="flex mt-20 flex-col items-center">
+        <div>
+          <img class="w-28 h-28 mb-4" src="./images/apple-logo.svg" alt="" />
+        </div>
+        <div
+          class="bg-[#0066b8] flex flex-col justify-center items-center rounded-sm text-white w-[240px] hover:cursor-pointer h-[68px] hover:bg-[#005ba4]"
+        >
+          <div class="flex gap-x-[1.5em]">
+            <img class="w-6 inline" src="./images/download.svg" alt="" />
+            <h1 class="leading-[2em] text-bold inline text-2xl">Windows</h1>
+          </div>
+          <div><p class="text-sm font-semibold">Windows 8, 10, 11</p></div>
+        </div>
+        <table class="border-spacing-1 border-separate mt-4">
+          <tr>
+            <td class="text-center">.zip</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Intel chip</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Apple sillicon</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Universal</td>
+          </tr>
+          <tr>
+            <td class="text-center">CLI</td>
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Intel chip</td>
+
+            <td class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1"class="bg-[#0066b8]  hover:cursor-pointer text-white hover:bg-[#005ab4] rounded-sm px-1">Apple sillicon</td>
+          </tr>
+        </table>
+      </div>
+    </section>
   </body>
 </html>
